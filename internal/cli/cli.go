@@ -60,7 +60,7 @@ func (c *CLI) runSplit(args []string) error {
 	splitCmd.Parse(args)
 
 	if *inputFile == "" || *outputDir == "" {
-		return fmt.Errorf("%w: input file and output directory are required", errors.ErrInvalidCommand)
+		return fmt.Errorf("%w: input file and output directory are required. -i <input_file> -o <output_file>", errors.ErrInvalidCommand)
 	}
 
 	ctx := context.Background()
