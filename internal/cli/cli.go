@@ -12,10 +12,10 @@ import (
 )
 
 type CLI struct {
-	handler handler.PDFcpuHandler
+	handler handler.Handler
 }
 
-func NewCLI(h handler.PDFcpuHandler) *CLI {
+func NewCLI(h handler.Handler) *CLI {
 	return &CLI{handler: h}
 }
 
